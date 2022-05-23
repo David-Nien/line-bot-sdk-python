@@ -1,0 +1,13 @@
+注意指令：
+
+做所有message function前要先做：
+from linebot.models import *
+
+#===============
+插入圖片選單前要先做：
+from linebot import (LineBotApi, WebhookHandler)
+from linebot.exceptions import (InvalidSignatureError)
+
+然後在選單Action中增加
+thumbnail_image_url=“你的圖片網址” (網址可以透過imgur上傳生成)
+================
